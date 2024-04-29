@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Unit Converter</title>
+
+    <!-- logo -->
+    <link rel="icon" href="../img/icon_logo.png">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="unit.css">
+
+    <!-- google font  -->
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Unit Converter</h1>
+        </div>
+
+        <div class="converter">
+            <input type="number" id="inputValue" placeholder="Enter value">
+            <select id="fromUnit">
+                <option value="cm">Centimeter (cm)</option>
+                <option value="inch">Inch (in)</option>
+                <option value="m">Meter (m)</option>
+                <option value="km">Kilometer (km)</option>
+                <option value="ft">Foot (ft)</option>
+                <option value="mile">Mile (mi)</option>
+                <option value="yard">Yard (yd)</option>
+                <option value="mm">Millimeter (mm)</option>
+                <option value="mg">Milligram (mg)</option>
+                <option value="g">Gram (g)</option>
+                <option value="kg">Kilogram (kg)</option>
+                <option value="oz">Ounce (oz)</option>
+                <option value="lb">Pound (lb)</option>
+                <option value="sec">Second (s)</option>
+                <option value="min">Minute (min)</option>
+                <option value="hr">Hour (hr)</option>
+            </select>
+
+            <select id="toUnit">
+                <option value="cm">Centimeter (cm)</option>
+                <option value="inch">Inch (in)</option>
+                <option value="m">Meter (m)</option>
+                <option value="km">Kilometer (km)</option>
+                <option value="ft">Foot (ft)</option>
+                <option value="mile">Mile (mi)</option>
+                <option value="yard">Yard (yd)</option>
+                <option value="mm">Millimeter (mm)</option>
+                <option value="mg">Milligram (mg)</option>
+                <option value="g">Gram (g)</option>
+                <option value="kg">Kilogram (kg)</option>
+                <option value="oz">Ounce (oz)</option>
+                <option value="lb">Pound (lb)</option>
+                <option value="sec">Second (s)</option>
+                <option value="min">Minute (min)</option>
+                <option value="hr">Hour (hr)</option>
+            </select>
+
+            <button onclick="convert()">Convert</button>
+        </div>
+
+
+        <div class="res-content">
+            <h1 class="res-tag">RESULT WILL BE HERE</h1>
+            <div class="result" id="result"></div>
+        </div>
+
+        <div class="sms">
+            <a href="../index.php#contact" class="sms-btn">Message</a>
+            <a href="../index.php#home" class="sms-btn">Portfolio</a>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2023 Unit Converter.by Bikash | All rights reserved.</p>
+        </div>
+    </div>
+
+    <!-- custom js -->
+    <script src="unit.js"></script>
+</body>
+
+</html>
